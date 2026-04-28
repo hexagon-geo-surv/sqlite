@@ -1,5 +1,5 @@
-C Fix\scomment\stypo
-D 2026-04-28T12:49:10.942
+C Attempt\sto\salign\sinstances\sof\sthe\ssqlite3_mutex\sobject\sat\s128-byte\sboundaries\nto\sprevent\sfalse-sharing\sin\smulti-core\smachines.\sSee\sthe\sdiscussion\sat\sand\naround\s[forum:/forumpost/2026-03-25T23:15:03Z|forum\spost\s2026-03-25T23:15:03Z].
+D 2026-04-28T15:12:40.363
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -712,8 +712,8 @@ F src/msvc.h 80b35f95d93bf996ccb3e498535255f2ef1118c78764719a7cd15ab4106ccac9
 F src/mutex.c 00b8cee206a67fd764d001f3a148494331d8d0b3b9c3974ecd69ff29bb444462
 F src/mutex.h a7b2293c48db5f27007c3bdb21d438873637d12658f5a0bf8ad025bb96803c4a
 F src/mutex_noop.c 9d4309c075ba9cc7249e19412d3d62f7f94839c4
-F src/mutex_unix.c f7ee5a2061a4c11815a2bf4fc0e2bfa6fb8d9dc89390eb613ca0cec32fc9a3d1
-F src/mutex_w32.c e1d317d29cb623667d43de94714264d1e1871cc4bb39fa67dd17048e8138c739
+F src/mutex_unix.c 9dce885059f9d2bb226e6e03bb2b41af4b89d40c323f908b58f5d05ff0565884
+F src/mutex_w32.c cd49a5772f1bfd174e22a0c783ba514a871a3a7089f90d7337019c32fecca94b
 F src/notify.c 57c2d1a2805d6dee32acd5d250d928ab94e02d76369ae057dee7d445fd64e878
 F src/os.c 509452169d5ea739723e213b8e2481cf0e587f0e88579a912d200db5269f5f6d
 F src/os.h 1ff5ae51d339d0e30d8a9d814f4b8f8e448169304d83a7ed9db66a65732f3e63
@@ -2203,8 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P e25b849a603cb08ab888641ff324e9aa129391c4792de86a62c55e9caf84c16e
-R 8caf5693df1acea1120136dd8fe20f43
+P d64a1dbe0fb2d9286806d833a3146b21d5bf1636a650d5a64cf163c7f2356e98
+R e7f5576deb3afe7b12491989f716c8e2
 U drh
-Z 447bd966147539ad1d8947015754287e
+Z 8f2b29d8666e7ca0a228448a291e99d6
 # Remove this line to create a well-formed Fossil manifest.
