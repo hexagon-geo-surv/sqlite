@@ -1,2 +1,2 @@
-branch win-mutex-revamp
-tag win-mutex-revamp
+branch omit-legacy-windows
+tag omit-legacy-windows

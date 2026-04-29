@@ -1,5 +1,5 @@
-C Updates\sand\ssimplifications\sto\sthe\smutex\simplementation\son\sWindows.\s\sUses\nSlim\sReader/Writer\sLocks\sfor\sperformance,\sfor\snon-reentrant\smutexes.\nRequires\sWindowsVista\sor\slater.
-D 2026-04-28T20:01:03.205
+C Simplify\sthe\sWindows\sinterface\sby\sremoving\ssupport\sfor\svarious\sWindowsXP\nand\sWindowsCE.\s\sThis\sis\sa\swork-in-progress.\s\sMore\sto\sfollow.
+D 2026-04-29T14:02:23.963
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -713,7 +713,7 @@ F src/mutex.c 00b8cee206a67fd764d001f3a148494331d8d0b3b9c3974ecd69ff29bb444462
 F src/mutex.h a7b2293c48db5f27007c3bdb21d438873637d12658f5a0bf8ad025bb96803c4a
 F src/mutex_noop.c 9d4309c075ba9cc7249e19412d3d62f7f94839c4
 F src/mutex_unix.c 9dce885059f9d2bb226e6e03bb2b41af4b89d40c323f908b58f5d05ff0565884
-F src/mutex_w32.c 6eb3fc28172d267c4a6a92ef09f557ac8bcebc01ac5638a2bb528c492011dff6
+F src/mutex_w32.c 554f4b0fda9c6891da9792f3479348cabcc4413d2acaed0646b63c3b9a7e0bca
 F src/notify.c 57c2d1a2805d6dee32acd5d250d928ab94e02d76369ae057dee7d445fd64e878
 F src/os.c 509452169d5ea739723e213b8e2481cf0e587f0e88579a912d200db5269f5f6d
 F src/os.h 1ff5ae51d339d0e30d8a9d814f4b8f8e448169304d83a7ed9db66a65732f3e63
@@ -721,7 +721,7 @@ F src/os_common.h 6c0eb8dd40ef3e12fe585a13e709710267a258e2c8dd1c40b1948a1d14582e
 F src/os_kv.c e7d96727db5b67e39d590a68cc61c86daf4c093c36c011a09ebfb521182ec28d
 F src/os_setup.h 8efc64eda6a6c2f221387eefc2e7e45fd5a3d5c8337a7a83519ba4fbd2957ae2
 F src/os_unix.c a07dce662f6c4e18098f6faa9f7ec7cf311f56ee9151bed2aad4dcd55852c9e2
-F src/os_win.c 0d553b6e8b92c8eb85e7f1b4a8036fe8638c8b32c9ad8d9d72a861c10f81b4c5
+F src/os_win.c a369be938cb13f0e9f6ebdc5d464b0f76aa4299f770cec0e2b39847bf83ca44d
 F src/os_win.h 5e168adf482484327195d10f9c3bce3520f598e04e07ffe62c9c5a8067c1037b
 F src/pager.c fbec9063ea139dfa5d94ce540671752b89f8e8dc38f8a1f614bab1aa04a2dd40
 F src/pager.h 6137149346e6c8a3ddc1eeb40aee46381e9bc8b0fcc6dda8a1efde993c2275b8
@@ -2203,11 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 1786fcd5b4ee6cd9b4780f3687dfaec5b90ef0476e0da266a94e069b98e70514
-R 86e1ad059a85bf06401a6419341a6e82
-T *branch * win-mutex-revamp
-T *sym-win-mutex-revamp *
-T -sym-trunk *
+P a75aa5400f94531b8ffd00be4580b0578d8d81ba9681fd06b1d9d96a6180994c
+R a9c063b3b0d2d29c9834c9cec465a4fc
 U drh
-Z 2cf5e98ef789e1ee6f49efcdd7196e10
+Z b5b8006e0d93d5ebb54fe5f93bf721e3
 # Remove this line to create a well-formed Fossil manifest.
