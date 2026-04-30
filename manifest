@@ -1,5 +1,5 @@
-C Fix\sthe\smemdb1.test\stest\smodule\sso\sthat\sit\sruns\scorrectly\son\sWindows.
-D 2026-04-30T15:33:44.476
+C Fix\sa\sharmless\scompiler\swarning\sin\ssrc/mutex_w32.c.
+D 2026-04-30T15:41:01.004
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -713,7 +713,7 @@ F src/mutex.c 00b8cee206a67fd764d001f3a148494331d8d0b3b9c3974ecd69ff29bb444462
 F src/mutex.h a7b2293c48db5f27007c3bdb21d438873637d12658f5a0bf8ad025bb96803c4a
 F src/mutex_noop.c 9d4309c075ba9cc7249e19412d3d62f7f94839c4
 F src/mutex_unix.c 9dce885059f9d2bb226e6e03bb2b41af4b89d40c323f908b58f5d05ff0565884
-F src/mutex_w32.c cd49a5772f1bfd174e22a0c783ba514a871a3a7089f90d7337019c32fecca94b
+F src/mutex_w32.c b4f9b5d81edf7b9abe00d512c184936809301afa310f513ff25f5a580210454f
 F src/notify.c 57c2d1a2805d6dee32acd5d250d928ab94e02d76369ae057dee7d445fd64e878
 F src/os.c 509452169d5ea739723e213b8e2481cf0e587f0e88579a912d200db5269f5f6d
 F src/os.h 1ff5ae51d339d0e30d8a9d814f4b8f8e448169304d83a7ed9db66a65732f3e63
@@ -2203,8 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P cc64cafdfe0b0965fabaf9d561d9a108c20a3643f71b36e6a6c51fc8f30b82cb
-R 0296a1a4dc47cf8830a70fe6252ab915
+P 9012f8ea7454bbb792b4361ed74d778e02b98ef44a443f9a23a27a4222fda747
+R f60cecd3ae6525706eb78da5f4621cdb
 U drh
-Z c2852b04b55ce9bbaaf730c47ed387ec
+Z 523ca6a0971f8bb563e97d91b703dda1
 # Remove this line to create a well-formed Fossil manifest.
