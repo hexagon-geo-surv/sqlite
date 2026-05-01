@@ -1,5 +1,5 @@
-C Harden\sthe\srecovery\sextension\sagainst\sSQL\sinjections\scoming\sfrom\sthe\nsqlite_schema\stable\sof\sthe\sdatabase\sbeing\srecovered.
-D 2026-05-01T16:06:21.671
+C Fix\san\sSQLITE_MISUSE\smemory\serror\sin\scheck-ini\s[1f940357f7bb160b].
+D 2026-05-01T17:42:15.461
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -672,7 +672,7 @@ F src/alter.c 7d7ddbdc189f0e0c686e32ee170abdddc95c11f2089e40df4ffcee88f5334826
 F src/analyze.c 03bcfc083fc0cccaa9ded93604e1d4244ea245c17285d463ef6a60425fcb247d
 F src/attach.c c58278c7d2d954785591c4fde81669ec3e4d52f348c453b028a19ae8adf4f338
 F src/auth.c ebec42df26b34a62b6750d30d9c2c03554a1c522020182476f7729a439fef04f
-F src/backup.c 95b97c120676e66b5479cd1d512aaf12ab653f7e68f404ccb79f17bf2d37910d
+F src/backup.c 6ebe22ccbedfcb92423833992130e8d65824be4e6599c3a03f540ab38fc7d13c
 F src/bitvec.c e242d4496774dfc88fa278177dd23b607dce369ccafb3f61b41638eea2c9b399
 F src/btmutex.c 30dada73a819a1ef5b7583786370dce1842e12e1ad941e4d05ac29695528daea
 F src/btree.c 216ffbe197e330118a2999adc7d3f09b0e2eeb163df8746ba9a2b27fed3d4335
@@ -2203,9 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 7cd76847e8c9b683e39c1063a343288f11b4aa5e9302394fe0c4244d361ee4f1
-Q +555401fe048a51ecaed3ef672723b6ef8e1340c7028c11a17731abbc399bc078
-R 449a0525f9cddd36be0bcbca19693106
+P 9190f1b9b8889e4d80c370db36b916744d5779de0ec51da0369bbe74adb7b931
+R daf617341525cb93b193d2a453da3d1c
 U drh
-Z 24c5c67d5a2b3769f39c9c1e890467e4
+Z 80e6eac2e96d40aca876dc4a525f888d
 # Remove this line to create a well-formed Fossil manifest.
