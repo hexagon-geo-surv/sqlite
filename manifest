@@ -1,5 +1,5 @@
-C Minor\soptimization\sto\sthe\sauthorizer.
-D 2026-05-02T17:30:33.566
+C Fix\sa\sharmless\scompiler\swarning\son\ssome\sMSVC\sversions.
+D 2026-05-02T20:19:31.535
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -800,7 +800,7 @@ F src/trigger.c 4bf3bfb3851d165e4404a9f9e69357345f3f7103378c07e07139fdd8aeb7bd20
 F src/update.c 3e5e7ff66fa19ebe4d1b113d480639a24cc1175adbefabbd1a948a07f28e37cf
 F src/upsert.c 215328c3f91623c520ec8672c44323553f12caeb4f01b1090ebdca99fdf7b4f1
 F src/utf.c 7267c3fb9e2467020507601af3354c2446c61f444387e094c779dccd5ca62165
-F src/util.c 39e88564b5552db35b1892895e167dd087c07dee4e303d269abb7533c6c86e46
+F src/util.c 98cf12c8ba65623a76c1eb6e6afa98ff40107c9919bf79af42f4bfc70e654232
 F src/vacuum.c d3d35d8ae893d419ade5fa196d761a83bddcbb62137a1a157ae751ef38b26e82
 F src/vdbe.c 1cd55e8171e4e87054de196c3c4747d44b69041b5ec910cf547ae82a85beb3e4
 F src/vdbe.h 70e862ac8a11b590f8c1eaac17a0078429d42bc4ea3f757a9af0f451dd966a71
@@ -2203,8 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a0d0b5aff51088699e5ad0a726c350d10744b1779acd9ee54232659fb4c352a4
-R 8840f9dff1e098a0d6ce9982e465d5de
+P 625f78a630bbf897f945065f1b85a92fe26e426302c8f6edc4d26a817ff62358
+R 5165a1579ee394bfecd4fc543aa32f10
 U drh
-Z 5cd41c06c77174b012275eae60eefac1
+Z ea3911b5c75537e0cdae36727f4e6392
 # Remove this line to create a well-formed Fossil manifest.
