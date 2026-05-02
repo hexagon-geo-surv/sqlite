@@ -1,5 +1,5 @@
-C Minor\soptimization\sto\sthe\sauthorizer.
-D 2026-05-02T17:30:33.566
+C Idea\sfor\sa\snew\sAPI\sthat\ssimply\sretrieves\sthe\scurrent\sauthorizer\ssettings.\nThis\smight\sbe\suseful,\sfor\sexample,\sin\sa\ssubroutine\sthat\swants\sto\srun\nSQL\swith\stemporary\schanges\sto\sthe\sauthorizer,\sbut\srestore\sthe\sapplication\nsettings\sbefore\sreturning.
+D 2026-05-02T18:09:18.491
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -671,7 +671,7 @@ F sqlite3.pc.in e6dee284fba59ef500092fdc1843df3be8433323a3733c91da96690a50a5b398
 F src/alter.c 7d7ddbdc189f0e0c686e32ee170abdddc95c11f2089e40df4ffcee88f5334826
 F src/analyze.c 03bcfc083fc0cccaa9ded93604e1d4244ea245c17285d463ef6a60425fcb247d
 F src/attach.c c58278c7d2d954785591c4fde81669ec3e4d52f348c453b028a19ae8adf4f338
-F src/auth.c b5ece4e1edccad082c0332fa0087df225473bae0feea9269f824312201377185
+F src/auth.c 870ffc2334b0b09159552fa15a402a4b34598029946acf66ffd17bbd396f809d
 F src/backup.c 6ebe22ccbedfcb92423833992130e8d65824be4e6599c3a03f540ab38fc7d13c
 F src/bitvec.c e242d4496774dfc88fa278177dd23b607dce369ccafb3f61b41638eea2c9b399
 F src/btmutex.c 30dada73a819a1ef5b7583786370dce1842e12e1ad941e4d05ac29695528daea
@@ -737,9 +737,9 @@ F src/resolve.c fcc406bfb055bee9954ee77c023f4a2a66a24bcdf1573516a72280811a269c20
 F src/rowset.c 8432130e6c344b3401a8874c3cb49fefe6873fec593294de077afea2dce5ec97
 F src/select.c 4c05cde130f26991b7411d8c6809e0630625e18078742c963a047b4b9cc01d49
 F src/shell.c.in 3ed0902de2a82c92ee535c1bc627fb7cfd64cc3b81762f1c10b59c634597da10
-F src/sqlite.h.in 39d2e09114d2bdb7afd998f4a469c8f8cd065f8093835a7d0422f260fc78fb4f
+F src/sqlite.h.in 64fe8dda94dcda10bb699eb8f824920b6fcf1786cce2defc8e83f0d0e3e9bb55
 F src/sqlite3.rc 015537e6ac1eec6c7050e17b616c2ffe6f70fca241835a84a4f0d5937383c479
-F src/sqlite3ext.h 9788c301f95370fa30e808861f1d2e6f022a816ddbe2a4f67486784c1b31db2e
+F src/sqlite3ext.h 3f13879d79c8b29df75c339f0b6772dedef02e480509c7baad998421920709d2
 F src/sqliteInt.h 5071d64ad787d9922e524d834c3fe7b7a11989d29dc6ea25f7944892a43266f4
 F src/sqliteLimit.h c70656b67ab5b96741a8f1c812bdd80c81f2b1c1e443d0cc3ea8c33bb1f1a092
 F src/status.c 7565d63a79aa2f326339a24a0461a60096d0bd2bce711fefb50b5c89335f3592
@@ -2203,8 +2203,11 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a0d0b5aff51088699e5ad0a726c350d10744b1779acd9ee54232659fb4c352a4
-R 8840f9dff1e098a0d6ce9982e465d5de
+P 625f78a630bbf897f945065f1b85a92fe26e426302c8f6edc4d26a817ff62358
+R 2b3869a49841a5132fd2f6c3f01c227e
+T *branch * get-authorizer
+T *sym-get-authorizer *
+T -sym-trunk *
 U drh
-Z 5cd41c06c77174b012275eae60eefac1
+Z 7fce7f21275d78c937590e147e441246
 # Remove this line to create a well-formed Fossil manifest.
