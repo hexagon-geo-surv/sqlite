@@ -1,5 +1,5 @@
-C Fix\san\sSQLITE_MISUSE\smemory\serror\sin\scheck-ini\s[1f940357f7bb160b].
-D 2026-05-01T17:42:15.461
+C Close\sdatabase\sconnections\sin\sa\stimely\smanner\sto\sfix\stest\sscript\sproblems\non\sWindows.
+D 2026-05-02T11:47:22.326
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -1629,8 +1629,8 @@ F test/shell1.test c84eff209f93ad17ccdf7e1634969fc8231684254edeb21d9b13d67c3179c
 F test/shell2.test dc541d2681503e55466a24d35a4cbf8ca5b90b8fcdef37fc4db07373a67d31d3
 F test/shell3.test 91efdd545097a61a1f72cf79c9ad5b49da080f3f10282eaf4c3c272cd1012db2
 F test/shell4.test e25580a792b7b54560c3a76b6968bd8189261f38979fe28e6bc6312c5db280db
-F test/shell5.test a9cd2c8b62e125049ef500937674f47dd6787f0157ac0515aa554044a4dc3ea9
-F test/shell6.test e3b883b61d4916b6906678a35f9d19054861123ad91b856461e0a456273bdbb8
+F test/shell5.test a0c43d82a811a463a5d07d6418c5a045ab01a072544db8aa31ae394e93845d8d
+F test/shell6.test 596f2eb385a1097d4e9130b4d4f663a24cba294b35f13b774b8f13553dec307d
 F test/shell7.test 43fd8e511c533bab5232e95c7b4be93b243451709e89582600d4b6e67693d5c3
 F test/shell8.test 38c9e4d7e85d2a3ecfacaa9f6cda4f7a81bf4fffb5f3f37f9cd76827c6883192
 F test/shell9.test c0e8871061a92151450b3332279a893b516fa73a6c46d4f51a0998407cbf8c89
@@ -2203,8 +2203,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 9190f1b9b8889e4d80c370db36b916744d5779de0ec51da0369bbe74adb7b931
-R daf617341525cb93b193d2a453da3d1c
+P fc64113e8f9aee0161e682db7c244a7849f2db86551a557b276deb1785941476
+R 154203b6f7e02382b6f43470bf0861db
 U drh
-Z 80e6eac2e96d40aca876dc4a525f888d
+Z cbfec84ccdc09ae8d72445fd5e7f5d8f
 # Remove this line to create a well-formed Fossil manifest.
