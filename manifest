@@ -1,5 +1,5 @@
-C For\s"make\stest"\son\sWindows,\sthe\s--stop-on-error\soption\sis\sused\sfor\ntestrunner.tcl,\swhich\scauses\sprocessing\sto\sdo\san\sorderly\sshutdown\sif\nany\sindividual\stest\smodule\sfails.
-D 2026-09-04T14:20:44.144
+C Fix\sminor\sissues\swith\sthe\sdelta_parse()\stable-valued\sfunction\sin\sthe\nfossildelta.c\sextension.\s\sAdd\stest\scases\sfor\sthe\sfossildelta.c\sextension.\n[bugs:/info/2026-09-09T10:29:35Z|Bug\s2026-09-09T10:29:35Z]\sand\n[bugs:/info/2026-09-09T10:55:54Z|Bug\s2026-09-09T10:55:54Z].
+D 2026-09-09T13:49:42.532
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -379,7 +379,7 @@ F ext/misc/diskused.c 6cf94f90cb4254ad5a90fc5992d594f3b0f4e0fa635c3549859b57d771
 F ext/misc/eval.c d4ea2d9898fbe4d30d38ff675ee51958d3bb0601a145bade56dee8b8f438cc5b
 F ext/misc/explain.c 04c9270fd8cf93a9bceb12d2f5f67e3f09a4e58b3e0efe14d24531444d2fffdf
 F ext/misc/fileio.c f32d7488e229cc52283b6f8d9370b004aa92e7a3054aef320cbdbdecb08c4ee5
-F ext/misc/fossildelta.c 5513fe1aae0d168fb5e798cd04a4d0e5fd15f39ca64c37b0eb63123602acc8e7
+F ext/misc/fossildelta.c 6442919f254791e3298d030fd8a612d4ad0dbbadbe39d21b568ef783d97c9e3a
 F ext/misc/fuzzer.c 32cef9a29864a1bc1329ccb6dfa613f197bb83491a7612c2ca2c83ee26cd8f14
 F ext/misc/ieee754.c 2901d08a586d00a1d3c0fd89e03c57ee9e2b5f013b0daab9e49c7a48a9d5946b
 F ext/misc/memstat.c 03ab52d2d841eb3f55118105c1964d5225f152b23bd708844c648b48d14ccbcf
@@ -1144,6 +1144,7 @@ F test/fkey_malloc.test 594a7ea1fbab553c036c70813cd8bd9407d63749
 F test/fordelete.test ba98f14446b310f9c9d935b97ec748753d0144a28b356ba30d1f4f6958fdde5c
 F test/fork-test.c 9ac2e6423a1d38df3d6be0e8ac15608b545de21e2b19d9d876254c5931b63edb
 F test/format4.test eeae341953db8b6bda7f549044797c3278a6cc345d11ada81471671b654f8ef4
+F test/fossildelta.sql f8636a793e6a05e6c93d31e6530cc588279bc7282a7cbada445ff0537ba30ee3
 F test/fp-speed-1.c 34a2fe8dc30d0b24bb3e7c16efca0a30452287da6caff7dde86eef882db155a4
 F test/fp-speed-2.c 15830b061832bb51f68f0985cf7a06f4f5d49eb25cc399854f1ff60d6a878ee9
 F test/fpconv1.test 63f352682fa65601a326563ad633086df6ab194e6ed5e7366786f38a525a7fd7
@@ -1397,7 +1398,7 @@ F test/limit2.test 621188fc3e5c3b8d2ef9827e05fa8313792ae563579073136efd25cb65325
 F test/literal.test a65dca9fef86e51b8e45544268e37abbd4bb94ba35fd65f6fdcab2f288cd8f79
 F test/literal2.tcl 1499037beaf661aeecdbe48801220a181d805372a64c6128d5f26bb6a4a8f0ce
 F test/literal2.test b149e16b5fc9ee6249069a8858ed41052f222014fe0ba7ad43c2fb989c2dada2
-F test/loadext.test 878db71cf74b48250dbe9033bbfe6088ff869db3353ffd4febc68c0cd459959e
+F test/loadext.test 5c5aee45e0e24431e40a551660420b6af62fb98c1dbcef129f730ac45f71e050
 F test/loadext2.test 0408380b57adca04004247179837a18e866a74f7
 F test/lock.test 675b4367ec58b21009e46982d071c8259255e69072296b7756ea75fac5425d1a
 F test/lock2.test 5242d8ac4e2d59c403aebff606af449b455aceff
@@ -1650,7 +1651,7 @@ F test/shell7.test 6b006d296b569a7ec78b8168af77578b3bde8f58b79c32d9f46cff1eaf763
 F test/shell8.test d2fc95f7467c3d93834cac3327bdac03554991afed6d9a07e6a2b204b037f9d7
 F test/shell9.test c0e8871061a92151450b3332279a893b516fa73a6c46d4f51a0998407cbf8c89
 F test/shellA.test 05cdaafa1f79913654487ce3aefa038d4106245d58f52e02faf506140a76d480
-F test/shellB.test 592748d685ccf4986fcd2b464098ea244b3b4c03d5400ee097e6698f14ed9a67
+F test/shellB.test 308669158f9b7014bee30dbab58893124bd78d6b1cf7d169c13d704c2edc6fc7
 F test/shmlock.test 9f1f729a7fe2c46c88b156af819ac9b72c0714ac6f7246638a73c5752b5fd13c
 F test/shortread1.test bb591ef20f0fd9ed26d0d12e80eee6d7ac8897a3
 F test/show_speedtest1_rtree.tcl 32e6c5f073d7426148a6936a0408f4b5b169aba5
@@ -2220,9 +2221,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P ae1650228de3b5a6f02527a17d5398f12528ad56ffc5f551f19078b34ef5eda9 ce822e8dc137128a6c495600205c6659a9cd2ba6ba188d86567ed97c04b7aeea
-R 2cae4b63cc958fc487a5983b3073ffa6
-T +closed ce822e8dc137128a6c495600205c6659a9cd2ba6ba188d86567ed97c04b7aeea
+P 4021369bc9558fbfcfa83ee4cd6b986734b8c41b6d72bd97064e566ca8189ea8
+R d9ffa1c097f416d3ee455da2e5e94de6
 U drh
-Z 09c163af4ed20f0aa56c5f5a23944a33
+Z e9b51991e5a19921e519752770967b36
 # Remove this line to create a well-formed Fossil manifest.
