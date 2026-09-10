@@ -1,5 +1,5 @@
-C When\sgenerating\scode\sto\sevaluate\sa\svector\sIN\sconstraint\swhere\sthe\sRHS\nof\sthe\sIN\soperator\sis\sa\ssubquery,\sif\sthe\sremoveUnindexableInClauseTerms()\nsubroutine\schanges\sthe\sorder\sof\sterms\sin\sthe\sIN\soperator,\sthen\sdo\snot\nallow\sthe\smodified\sIN\soperator\sto\sreuse\sa\spreviously\sgenerated\sevaluation\nof\sthe\ssubquery.
-D 2026-08-24T14:41:51.803
+C The\svalue\sreturned\sby\sjson_each.root\sshould\sbe\sSQLITE_TRANSIENT,\snot\nSQLITE_STATIC.
+D 2026-09-10T10:25:02.959
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -701,7 +701,7 @@ F src/hash.h 46b92795a95bfefb210f52f0c316e9d7cdbcdd7e7fcfb0d8be796d3a5767cddf
 F src/hwtime.h 21c2cf1f736e7b97502c3674d0c386db3f06870d6f10d0cf8174e2a4b8cb726e
 F src/in-operator.md 10cd8f4bcd225a32518407c2fb2484089112fd71
 F src/insert.c dfd311b0ac2d4f6359e62013db67799757f4d2cc56cca5c10f4888acfbbfa3fd
-F src/json.c 4e4c09d05188bb4d4dc665e1d4409ce55d66ee87478a38c454dd4936558e14bd
+F src/json.c eaa4b528385eab538693147482e74b3ed02b99d29b53b453ee05efe70bb63757
 F src/legacy.c d7874bc885906868cd51e6c2156698f2754f02d9eee1bae2d687323c3ca8e5aa
 F src/loadext.c 56a542244fbefc739a2ef57fac007c16b2aefdb4377f584e9547db2ce3e071f9
 F src/main.c 348784a162acc19d62373560c2fa93886520e0dd94f19bfe8bd2491280e95607
@@ -2206,9 +2206,9 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P a914d28b02ae45295e570f6ef0c69c02983ee2686ff91edf57fd6e2d52fd2f41
-Q +8ee92456eb21878c44732e9adaac64009133eb03c36a7390b42427d63ff4a340
-R 1c181adef04341eb1e8561e2e8f4fc14
+P 2f95f4a873af70901945bf486e9ec99534994b7dd3d5639a5ab7ce9f0cd96c68
+Q +1d9bd6c8a2fa81883bf5fce767135645e480c32d78c325c5eb0da07cdd2ec076
+R 5f729e27d7fc9993803dff8e9c470499
 U drh
-Z 9af56a643465b6106b331edc314238d7
+Z 9067db02c276015f974e7e7dc954c7dd
 # Remove this line to create a well-formed Fossil manifest.
