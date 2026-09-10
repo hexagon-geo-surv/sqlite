@@ -1,5 +1,5 @@
-C The\svalue\sreturned\sby\sjson_each.root\sshould\sbe\sSQLITE_TRANSIENT,\snot\nSQLITE_STATIC.
-D 2026-09-10T10:20:32.783
+C In\sPRAGMA\sintegrity_check,\sdouble\sthe\sspace\savailable\sfor\schecking\sthat\nevery\sbyte\sof\sa\spage\sis\sused\sonly\sonce\sas\sa\ssafety\smargin\sto\sdeal\swith\nunforeseen\skinds\sof\sdatabase\scorruption.
+D 2026-09-10T20:04:18.740
 F .fossil-settings/binary-glob 61195414528fb3ea9693577e1980230d78a1f8b0a54c78cf1b9b24d0a409ed6a x
 F .fossil-settings/empty-dirs dbb81e8fc0401ac46a1491ab34a7f2c7c0452f2f06b54ebb845d024ca8283ef1
 F .fossil-settings/ignore-glob 35175cdfcf539b2318cb04a9901442804be81cd677d8b889fcc9149c21f239ea
@@ -683,7 +683,7 @@ F src/auth.c b5ece4e1edccad082c0332fa0087df225473bae0feea9269f824312201377185
 F src/backup.c f6a1490f4ef86cca51f0f93158bbc140b5822406e0c50ec61731e3fcdc1242a2
 F src/bitvec.c e242d4496774dfc88fa278177dd23b607dce369ccafb3f61b41638eea2c9b399
 F src/btmutex.c 30dada73a819a1ef5b7583786370dce1842e12e1ad941e4d05ac29695528daea
-F src/btree.c 6a9bd6a311801b28f5c191ef5d5469ff8bac677f810a63a6708d761e0d1c19eb
+F src/btree.c 33f28480d249871e94ab6be1100cfe66f1c3e528c26f769875a7e2a63cd538ec
 F src/btree.h 2ee0ddfdf4f8530ad1d46afffd7da21a0e243bfab10973011ac6f6b7fb4109a1
 F src/btreeInt.h df956bca48cd49d2a38886bc3b02045c039e8a16353f86fccd116c6487f79d82
 F src/build.c 0a160b40ea1f85b5a95e62310bbe2b944b8834a26c36f1f4b7f0f2c7e654f789
@@ -1443,7 +1443,7 @@ F test/memdb2.test 4ba1fc09e2f51df80d148a540e4a3fa66d0462e91167b27497084de4d1f6b
 F test/memjournal.test 70f3a00c7f84ee2978ad14e831231caa1e7f23915a2c54b4f775a021d5740c6c
 F test/memjournal2.test dbc2c5cb5f7b38950f4f6dc3e73fcecf0fcbed3fc32c7ce913bba164d288da1e
 F test/memleak.test c7478f1195d64887dd1c677edc39fa03b5bf29024e6dcc5b5cc554d7ed00b01f
-F test/memsubsys1.test 86b8158752af9188ed5b32a30674a1ef71183e6bc4e6808e815cd658ca9058a6
+F test/memsubsys1.test 36ce01ed2019c716c067704f5431d2d93d4075389d8701dfef88c3b5289be05b
 F test/memsubsys2.test 774b93cb09ca50d1b759bb7c645baa2a9ce172edc3a3da67d5150a26a9fc2a08
 F test/merge1.test 7dd9dc6838bcd0623a069485fe3a8dd498a051c16e1877cf84f506c0d6a29b43
 F test/minmax.test 885d89737b955905b52bd5b203f27b9b56d1e399b8155c2a95ab0f3264e0f582
@@ -2221,8 +2221,8 @@ F tool/warnings-clang.sh bbf6a1e685e534c92ec2bfba5b1745f34fb6f0bc2a362850723a9ee
 F tool/warnings.sh a554d13f6e5cf3760f041b87939e3d616ec6961859c3245e8ef701d1eafc2ca2
 F tool/win/sqlite.vsix deb315d026cc8400325c5863eef847784a219a2f
 F tool/winmain.c 00c8fb88e365c9017db14c73d3c78af62194d9644feaf60e220ab0f411f3604c
-P 737ab94632c7745d3fd1f82894a1c8174db59350a33329660681398dd604c4d0
-R 4a96ba302fb693ed50958a45abba98f8
+P 1d9bd6c8a2fa81883bf5fce767135645e480c32d78c325c5eb0da07cdd2ec076
+R 8d5b32099ee13de0a36f7eb7abbecba9
 U drh
-Z c91e6d631c1a52fbe803eab1cfd00716
+Z e98510ac70d4904f2db43738da60e8c8
 # Remove this line to create a well-formed Fossil manifest.
